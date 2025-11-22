@@ -21,7 +21,7 @@ The project uses a `CountVectorizer` for feature extraction and a `MultinomialNB
 ## How to Run
 1. Open the provided Google Colab Notebook.
 2. connect allow acces to your google drive
-3. Upload the provided dataset (`language_data.csv`) to your Google Drive or session.
+3. Upload the provided dataset (`Language_Dataset.csv`) to your Google Drive or session.
 4. Run the cells sequentially.
 5. The final cell will launch a Gradio link for the GUI.
 
