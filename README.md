@@ -48,6 +48,7 @@ This project uses a standard Natural Language Processing (NLP) pipeline to detec
 * **UI & Translation:** A **Gradio** web interface captures user text, runs it through the local ML model for detection, and then routes it through the `deep_translator` API for an instant English translation.
 
 ## Output samples
+<img width="988" height="520" alt="Screenshot 2026-03-30 000106" src="https://github.com/user-attachments/assets/af54e8bb-d15e-4575-81f3-834f87c26f05" />
 
 ## Author
 [Aditya prakash singh]
