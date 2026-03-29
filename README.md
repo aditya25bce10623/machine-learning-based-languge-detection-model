@@ -1,7 +1,7 @@
 # AI-languge-detector-based-on-machine-learning
 ## Project Overview
-This project is a Machine Learning-based application that identifies the language of a given text. It supports multiple languages and provides an accuracy of nearly 97.56%. The project includes a GUI built with Gradio for ease of use
-due to the size limit a pretrained model is not provided the model must be trained by the user.
+This project is a Machine Learning-based application that identifies the language of a given text. It supports multiple languages and provides an accuracy of nearly 97.56%. The project includes a GUI built with Gradio for ease of use.
+**due to the size limit a pretrained model is not provided the model must be trained by the user.**
 
 ## Features
 - **Multi-language Support:** Detects text input in different languages.
