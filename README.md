@@ -38,6 +38,15 @@ pip install deep_translator
 4. paste the dataset (`Lang_Dataset.csv`) to the path and update the same in the trainer and reader end script
 5. on a sucessfull run trainer script will output a Gradio link
 
+##  Methodology
+
+This project uses a standard Natural Language Processing (NLP) pipeline to detect and translate text in real-time:
+
+* **Data Preparation:** Text samples from multiple languages are merged using `pandas`, cleaned of duplicates, and split into an 80/20 training and testing set.
+* **Feature Extraction (TF-IDF):** To handle unseen words and overlapping vocabulary (like Spanish and Italian), the text is processed using `TfidfVectorizer` with **character n-grams (3 to 5 letters)**. This trains the model to recognize unique prefixes, suffixes, and syllables rather than just whole words.
+* **Model Training:** A **Multinomial Naive Bayes** classifier (`MultinomialNB`) calculates the probability of specific letter patterns belonging to a given language. The trained pipeline is then serialized with `joblib` for fast inference.
+* **UI & Translation:** A **Gradio** web interface captures user text, runs it through the local ML model for detection, and then routes it through the `deep_translator` API for an instant English translation.
+
 ## Output samples
 
 ## Author
