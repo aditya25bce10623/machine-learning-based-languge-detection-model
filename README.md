@@ -1,29 +1,43 @@
 # AI-languge-detector-based-on-machine-learning
 ## Project Overview
-This project is a Machine Learning-based application that identifies the language of a given text. It supports 7 languages and provides an accuracy nearly 98.26%. The project includes a GUI built with Gradio for ease of use
+This project is a Machine Learning-based application that identifies the language of a given text. It supports 7 languages and provides an accuracy nearly 97.56%. The project includes a GUI built with Gradio for ease of use
 
 ## Features
-- **Multi-language Support:** Detects text input in  7 different languages.
-- **High Accuracy:** it has high accuracy of 98.26% on test data.
+- **Multi-language Support:** Detects text input in different languages.
+- **High Accuracy:** it has high accuracy of 97.56% on test data.
 - **Web GUI:** uses gradio for a simple intractive interface.
-- **Optimized Performance:** Loads pre trained models from Google Drive to save time.
-
-## Technologies Used
+- 
+## Language used
 - Python
+## Libraries Used
 - Scikit-learn (Machine Learning)
 - Pandas (Data Handling)
 - Gradio (Interface)
-- Google Colab (IDE)
+- joblib (file save and load)
 
 ## Model Architecture
-The project uses a `CountVectorizer` for feature extraction and a `MultinomialNB` (Naive Bayes) classifier.
+The project uses a `TfidfCountVectorizer` for feature extraction and a `MultinomialNB` (Naive Bayes) classifier.
 
+**. Install Project Libraries**
+```bash
+pip install gradio
+```
+```bash
+pip install pandas
+```
+```bash
+pip install scikit-learn
+```
+```bash
+pip install deep_translator
+```
 ## How to Run
-1. Open the provided Google Colab Notebook.
-2. connect allow acces to your google drive
-3. Upload the provided dataset (`Language_Dataset.csv`) to your Google Drive or session.
-4. Run the cells sequentially.
-5. The final cell will launch a Gradio link for the GUI.
+1. install all the nrequired libraries
+2. Download all the necessary files given.
+3. run the trainer.py script to generate the model or the pre trained model given can also be used.
+4. paste the dataset (`Lang_Dataset.csv`) to the path and update the same in the trainer and reader end script
+5. on a sucessfull run trainer script will output a Gradio link
+
 
 ## Author
 [Aditya prakash singh]
