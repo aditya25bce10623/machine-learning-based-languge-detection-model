@@ -18,7 +18,7 @@ This project is a Machine Learning-based application that identifies the languag
 ## Model Architecture
 The project uses a `TfidfCountVectorizer` for feature extraction and a `MultinomialNB` (Naive Bayes) classifier.
 
-**. Install Project Libraries**
+## Install Project Libraries**
 ```bash
 pip install gradio
 ```
@@ -38,6 +38,7 @@ pip install deep_translator
 4. paste the dataset (`Lang_Dataset.csv`) to the path and update the same in the trainer and reader end script
 5. on a sucessfull run trainer script will output a Gradio link
 
+## Output samples
 
 ## Author
 [Aditya prakash singh]
