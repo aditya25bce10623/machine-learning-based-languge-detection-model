@@ -36,7 +36,7 @@ pip install deep_translator
 1. install all the nrequired libraries
 2. due to the size limit a pretrained model is not provided the model must be trained by the user.
 3. Download all the necessary files given.
-4. paste the dataset (`Lang_Dataset.csv`) to the path and update the same in the trainer and reader end script
+4. make sure all the neccessary files are placed in same base folder
 5. run the trainer.py script to train the model on given dataset.
 6. on a sucessfull run trainer script will output a Gradio link
 
